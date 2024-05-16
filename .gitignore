@@ -1,0 +1,5 @@
+# IDE
+.idea
+
+# app
+var/models
