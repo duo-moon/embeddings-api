@@ -1,1 +1,1 @@
-# text2vec-api
+# Embeddings API
