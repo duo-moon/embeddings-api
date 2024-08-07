@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["moon"]
 readme = "README.md"
-packages = [{include = "embeddings-api", from = "src"}]
+packages = [{include = "embeddings_api", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -15,8 +15,8 @@ torch = "^2.3.0"
 transformers = "^4.40.2"
 optimum = "^1.19.1"
 pydantic-settings = "^2.2.1"
-onnxruntime = "^1.17.3"
-onnx = "^1.16.0"
+onnx = "^1.16.2"
+onnxruntime = "^1.18.1"
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^7.0.0"
