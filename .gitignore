@@ -2,4 +2,5 @@
 .idea
 
 # app
+.env
 var/models
