@@ -9,6 +9,17 @@ from .vectorizer import Vectorizer
 from .vectotization_service import VectorizationService
 
 
+class VectorizationRequest(BaseModel):
+    input: str
+
+
+class VectorizationResponse(BaseModel):
+    model: str
+    
+    embeddings: list[float]
+
+
+
 class InputText(BaseModel):
     text: str
 

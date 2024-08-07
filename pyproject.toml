@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "text2vec-api"
+name = "embeddings-api"
 version = "0.1.0"
 description = ""
 authors = ["moon"]
 readme = "README.md"
-packages = [{include = "text2vec_api", from = "src"}]
+packages = [{include = "embeddings-api", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
