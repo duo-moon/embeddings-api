@@ -5,9 +5,10 @@ from .container import ApplicationContainer
 from .router import router
 
 
-def create_app() -> FastAPI:
+def build_app() -> FastAPI:
     container = ApplicationContainer()
-    container.config.from_dict(get_settings().model_dump())
+    settings = get_settings()
+    container.config.from_dict(settings)
     container.init_resources()
 
     app = FastAPI()
