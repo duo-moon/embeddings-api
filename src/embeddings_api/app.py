@@ -9,7 +9,6 @@ def build_app() -> FastAPI:
     container = ApplicationContainer()
     settings = get_settings()
     container.config.from_dict(settings)
-    container.init_resources()
 
     app = FastAPI()
     app.container = container
